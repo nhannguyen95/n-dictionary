@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:ont="http://www.semanticweb.org/apple/ontologies/2017/1/ont#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#has -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#antonyme -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#antonyme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#cor_adj -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#cor_adj">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#cor_adv -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#cor_adv">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#cor_noun -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#cor_noun">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#cor_verb -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#cor_verb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#general -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#general">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#id -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#present -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#present">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#simple_future -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#simple_future">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#simple_past -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#simple_past">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#synonyme -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#synonyme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#type -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage -->
+
+    <Class rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage">
+        <disjointWith rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word -->
+
+    <Class rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#beauty -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#beauty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <ont:has rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_beauty"/>
+        <ont:antonyme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crudeness, inelegance, roughness</ont:antonyme>
+        <ont:cor_adj rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beautiful</ont:cor_adj>
+        <ont:cor_adv rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beautifully</ont:cor_adv>
+        <ont:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26079949</ont:id>
+        <ont:synonyme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loveliness, attractiveness, handsomeness, pulchritude</ont:synonyme>
+        <ont:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun</ont:type>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#efficiently -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#efficiently">
+        <rdf:type rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <ont:has rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_efficiently"/>
+        <ont:antonyme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inefficiently</ont:antonyme>
+        <ont:cor_adj rdf:datatype="http://www.w3.org/2001/XMLSchema#string">efficient</ont:cor_adj>
+        <ont:cor_noun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">efficiency</ont:cor_noun>
+        <ont:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">780066123</ont:id>
+        <ont:synonyme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expeditiously</ont:synonyme>
+        <ont:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adverb</ont:type>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#tolerate -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#tolerate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Word"/>
+        <ont:has rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_tolerate"/>
+        <ont:antonyme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deny, disagree, refuse, reject</ont:antonyme>
+        <ont:cor_adj rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tolerable</ont:cor_adj>
+        <ont:cor_adv rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tolerably</ont:cor_adv>
+        <ont:cor_noun rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tolerance</ont:cor_noun>
+        <ont:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">415117966</ont:id>
+        <ont:synonyme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allow, permit, countenance</ont:synonyme>
+        <ont:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb</ont:type>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_beauty -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_beauty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+        <ont:general rdf:datatype="http://www.w3.org/2001/XMLSchema#string">she was a woman of great beauty</ont:general>
+        <ont:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26079949</ont:id>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_efficiently -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_efficiently">
+        <rdf:type rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+        <ont:general rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in order to retrieve data more efficiently and smoothly, the new search tool was developed and implemented</ont:general>
+        <ont:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">780066123</ont:id>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_tolerate -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/apple/ontologies/2017/1/ont#usage_tolerate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/apple/ontologies/2017/1/ont#Usage"/>
+        <ont:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">415117966</ont:id>
+        <ont:present rdf:datatype="http://www.w3.org/2001/XMLSchema#string">my father cannot tolerate the noise from the street.</ont:present>
+        <ont:simple_future rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My father will not tolerate the noise from the street.</ont:simple_future>
+        <ont:simple_past rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My father could not tolerate the noise from the street.</ont:simple_past>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

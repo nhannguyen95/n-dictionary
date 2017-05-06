@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    
+    <div class="overlay-bg hidden"></div>
+    <div th:replace="layout :: header"></div>
+    
+    <div class="wrapper">
+    <div class="laban_tudien">
+    	<form class="input_area" action="#" th:action="@{/home/search}" method="GET">
+    		<input maxlength="49" type="text" class="input_box" autocomplete="off" value="" id="txtSearchBox" name="q"/>
+    		<select id="searchOptions" class="options">
+                <option value="">Eng - Viet</option>
+                <option value="_vi">Viet - Eng</option>
+        	</select>
+        	<button id="search">Look up</button>
+        </form>
+     </div>
+     
+     <div id="slide_show" class="details">
+     	<div class="app">
+            <div style="margin-bottom:15px;">
+                <img src="../static/images/google-play.png" th:src="@{/images/google-play.png}" width="70" height="69" class="fl"/>
+                <div class="info_app">
+                    <h3>Dictionary on Android</h3>
+                    <a href=""><img src="../static/images/download.png" th:src="@{/images/download.png}"  width="23" height="23"/></a>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div id="extension_recommend_download">
+                <img src="../static/images/app-store.png" th:src="@{/images/app-store.png}" width="65" height="60" class="fl"/>
+                <div class="info_app">
+                    <h3>Dictionary on iOS</h3>
+                    <a href="" target="_blank"><img src="../static/images/download.png" th:src="@{/images/download.png}" width="23" height="23"/></a>
+                    <div class="clr"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="world" style="border-bottom:#CCCCCC solid 1px">
+        	<th:block th:if="${word != null}">
+        		<div class="fl word_tab_title word_tab_title_0">
+        			<h2 class="fl" th:text="${word.word + ' ' + word.transcription}"></h2>
+        			<div class="fl">
+        				<a class="sp_uk" title="">Đọc giọng UK</a>
+        				<a class="sp_us" title="">Đọc giọng US</a>
+        				<span id="sound"></span>
+        				<div class="clr"></div>
+    				</div>
+        		</div>
+        	</th:block>
+        	
+        	<div class="fr tab slide_select">
+              	 <a href="#tab1" class="active">Dictionary</a>
+                
+                 <a href="#tab2">Examples</a>
+              	  
+               	 <a href="#tab3">Wikipedia</a>
+               	 	
+                
+                <div class="clr"></div>
+            </div>
+        	<div class="clr"></div>
+        </div>
+        	
+        <div id="content_selectable" class="slide-content">
+        	<ul class="slide_img" style="position:relative; overflow: hidden; ">
+        	
+        		<li class="slide_content" id="tab1">
+        			<div id="content_selectable" class="content">
+        				<th:block th:if="${word != null}">
+        				
+        					<span th:utext="${word != null} ? ${word.detail} : 'null value!'">someValue</span>
+        					
+        				</th:block>
+        				
+        				<th:block th:unless="${word != null}">
+        					
+        					<span th:text="${ans}">someValue</span>
+        					
+        				</th:block>
+        			</div>
+        		</li>
+        		
+        		<li class="slide_content" id="tab2">  
+        			<div id="content_selectable" class="content">
+        				<span th:utext="${webcrawler}"></span>
+        			</div>
+        		 </li>
+        		
+        		<li class="slide_content" id="tab3">
+        			<div id="content_selectable" class="content">
+        				<span th:utext="${wikidata}"></span>
+        			</div>
+        		 </li>
+        		
+        	</ul>
+        </div>
+        
+     </div>
+     </div>
+    	
+    
+    <div id="footer_details">
+    	<div class="wrapper">
+            <div class="footer_content">
+        	    <h2 class="logo_footer">N Dictionary</h2>
+            	<ul class="footer_info">
+               	 <li style="list-style:none;"><a target="_blank" href="http://nhannguyen95.wordpress.com" title="">Introduction</a></li>
+                	<li><a target="_blank" href="http://nhannguyen95.wordpress.com" title="">Our website</a></li>
+                	<li><a target="_blank" href="http://nhannguyen95.wordpress.com" title="">Lorem ipsum</a></li>
+                	<li style="list-style:none; padding-left:275px; padding-right:0;">Copyright &copy; eGovy</li>
+            	</ul>
+            	<div class="clr"></div>
+        	</div>
+    	</div>
+	</div>
+</body>
+</html>

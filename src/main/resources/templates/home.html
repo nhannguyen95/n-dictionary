@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    
+    <div class="overlay-bg hidden"></div>
+    <div th:replace="layout :: header"></div>
+    
+    <div class="wrapper">
+    <div class="laban_tudien">
+    	<form class="input_area" action="#" th:action="@{/home/search}" method="GET">
+    		<input maxlength="49" type="text" class="input_box" autocomplete="off" value="" id="txtSearchBox" name="q"/>
+    		<select id="searchOptions" class="options">
+                <option value="">Eng - Viet</option>
+                <option value="_vi">Viet - Eng</option>
+        	</select>
+        	<button id="search">Look up</button>
+        </form>
+    	<div>
+            <div class="info_l">
+                <h3>Dictionary</h3>
+                <ul>
+                    <li>Free dictionary</li>
+                    <li>Provide 2 main dictionaries: Eng - Viet, Viet - Eng</li>
+                    <li>One more feature and I can't think of it yet</li>
+                </ul>
+            </div>	
+            <div class="info_r">
+                <div>
+                    <img src="../static/images/google-play.png" th:src="@{/images/google-play.png}" width="70" height="69" class="fl"/>
+                    <div class="info_app">
+                        <h3>Dictionary on Google Play</h3>
+                        <p>Look up vocabulary offline.<br></br>
+						   No need internet connection.<br></br>
+ 					       Lorem ipsum dolor sit amet.</p>
+                        <a href=""><img src="../static/images/download.png" th:src="@{/images/download.png}" width="28" height="28"/></a>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div id="extension_recommend_download" style="display: block;">
+                    <img src="../static/images/app-store.png" th:src="@{/images/app-store.png}" width="65" height="65" class="fl"/>
+                    <div class="info_app">
+                            <h3>Dictionary on App Store</h3>
+                          <p>Look up vocabulary offline.<br></br>
+							 No need internet connection.<br></br>
+							 Lorem ipsum dolor sit amet.</p>
+                          <a onclick="" href="" target="_blank"><img src="../static/images/download.png" th:src="@{/images/download.png}" width="28" height="28"/></a>
+                    <div class="clr"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>	
+        </div>	
+    </div>
+    
+    </div>
+    
+    <div th:replace="layout :: footer"></div>
+</body>
+</html>

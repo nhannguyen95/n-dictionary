@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>N Dictionary - Từ điển Anh Việt</title>
+
+<link href="../static/images/icon.png" th:href="@{/images/icon.png}"
+    rel="shortcut icon" />
+
+<!-- custom style -->
+<link href="../static/css/styles-1.11.min.css"
+      th:href="@{/css/styles-1.11.min.css}" rel="stylesheet" />
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<!-- script  -->
+<script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" 
+    th:src="@{/webjars/jquery/1.12.4/jquery.min.js}">
+</script>
+
+<script src="../static/js/tab.js"
+      th:src="@{/js/tab.js}">
+</script>
+
+</head>
+
+<body>
+    <div th:fragment="header" id="header">
+    	<div class="wrapper">
+	    	<div class="header_content">
+    		    <h1 class="logo">
+            	    <a title="Về trang chủ" th:href="@{/home}">N Dictionary - Từ điển Anh Việt, Việt </a>
+            	</h1>
+        	   <div class="clr"></div>
+    	    </div>
+	    </div>
+	</div>
+
+	<div id="footer">
+    	<div class="wrapper">
+            <div class="footer_content">
+        	    <h2 class="logo_footer">N Dictionary</h2>
+            	<ul class="footer_info">
+               	 <li style="list-style:none;"><a target="_blank" href="http://nhannguyen95.wordpress.com" title="">Introduction</a></li>
+                	<li><a target="_blank" href="http://nhannguyen95.wordpress.com" title="">Our website</a></li>
+                	<li><a target="_blank" href="http://nhannguyen95.wordpress.com" title="">Lorem ipsum</a></li>
+                	<li style="list-style:none; padding-left:275px; padding-right:0;">Copyright &copy; eGovy</li>
+            	</ul>
+            	<div class="clr"></div>
+        	</div>
+    	</div>
+	</div>
+
+</body>
+
+</html>
