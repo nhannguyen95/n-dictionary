@@ -19,7 +19,7 @@ Sementic dictionary website project
 
 ![alt text](http://i.imgur.com/2TlW6pP.png)
 
-## How to use:
+## How to use
 
 Database: edit.sql
 
