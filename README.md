@@ -17,7 +17,7 @@ Sementic dictionary website project
   
 **Find paragraphs on Internet which contain a specific word (web crawler)**
 
-![alt text](http://imgur.com/2TlW6pP)
+![alt text](http://i.imgur.com/2TlW6pP.png)
 
 ## How to use:
 
