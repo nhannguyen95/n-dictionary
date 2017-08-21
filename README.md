@@ -5,7 +5,7 @@ Sementic dictionary website project
 
 **Search wikidata for word, sentence**
 
-![Alt Text](http://i.imgur.com/Cz9rEKK.gif)
+![Alt Text](http://i.imgur.com/b4wCKPU.gif)
 
 **Sementic analyze user's queries**
 
