@@ -13,9 +13,11 @@ Sementic dictionary website project
 - ask for an example of a word ( Cho một ví dụ về từ ... ở thì ... ? )
 - word class ( Từ loại của ... là gì ? )
 
-
+![Alt Text](http://i.imgur.com/nMyqRBu.gif)
   
 **Find paragraphs on Internet which contain a specific word (web crawler)**
+
+![alt text](http://imgur.com/2TlW6pP)
 
 ## How to use:
 
